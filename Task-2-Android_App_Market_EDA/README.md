@@ -1,68 +1,54 @@
-**Android App Market EDA**
-This project presents a comprehensive Exploratory Data Analysis (EDA) of the Google Play Store dataset. The objective is to derive actionable insights about app performance, user behavior, pricing strategies, and market dynamics using structured data analysis and interactive visualizations.
+# 📊 Android App Market EDA
 
-**Project Objective**
-To clean, explore, and analyze app and user review data from the Google Play Store to understand:
+This project analyzes the Google Play Store data to uncover insights about the Android app market. It involves data cleaning, category exploration, metrics analysis, sentiment review, and interactive visualizations using Python and Plotly.
 
-Key trends in app categories, ratings, and installs
+---
 
-Pricing distribution between free and paid apps
+## 🎯 Objective
 
-User sentiment patterns across app reviews
+To explore, clean, and visualize app data from the Google Play Store in order to understand market trends, user ratings, app types, pricing strategies, and user sentiments.
 
-Influencing factors for app success on the platform
+---
 
-**Datasets Used**
-File	Description
-apps.csv	Raw dataset containing app-level information
-user_reviews.csv	Raw dataset of user reviews with sentiment labels
-cleaned_apps.csv	Cleaned and processed app dataset
-cleaned_reviews.csv	Cleaned and processed review dataset
+## ✅ Key Features
 
-**Data Cleaning & Preparation**
-Performed rigorous data preprocessing to ensure accuracy and consistency:
+### 1. Data Preparation
+- Removed missing values from important columns
+- Cleaned and converted `Installs`, `Price`, and `Reviews` columns to proper numeric format
+- Removed duplicate entries
+- Exported cleaned data as `cleaned_apps.csv` and `cleaned_reviews.csv`
 
-Removed null and duplicate records
+### 2. Category Exploration
+- Identified and printed the Top 10 app categories by volume
 
-Converted data types (Installs, Price, Reviews) to numeric formats
+### 3. Metrics Analysis
+- Calculated average rating, max installs, most reviewed app, and average price of paid apps
 
-Filtered irrelevant or corrupted entries
+### 4. Sentiment Analysis
+- Analyzed user sentiments (Positive, Neutral, Negative) from reviews
+- Displayed counts and percentage distribution
 
-Saved clean datasets for downstream analysis
+### 5. Interactive Visualizations (Plotly)
+- 📊 Bar Plot: Top 10 App Categories
+- 📉 Histogram: Rating Distribution
+- 🥧 Pie Chart: Free vs Paid Apps
+- 💰 Scatter Plot: Price vs Rating (Paid Apps)
+- 💬 Bar Chart: Sentiment Distribution
 
- **Key Analyses & Insights**
-📂 Category Exploration
-Identified top 10 most populated app categories
+---
 
-Assessed distribution of app types (free vs paid)
+## 📁 Files Included
 
-**📈 Metrics Analysis**
-Calculated average ratings, installs, and pricing
+- `Android_App_Market_EDA.ipynb` – Jupyter Notebook with complete analysis
+- `apps.csv` – Raw app dataset
+- `user_reviews.csv` – Raw user reviews dataset
+- `cleaned_apps.csv` – Cleaned app dataset
+- `cleaned_reviews.csv` – Cleaned user reviews
 
-Identified the most reviewed and most downloaded apps
+---
 
-**💬 Sentiment Analysis**
-Classified user reviews into Positive, Neutral, and Negative
+## ⚙️ How to Run
 
-Analyzed sentiment distribution across app types and categories
-
-**📊 Visualizations (Interactive - Plotly)**
-Bar Chart – Top 10 App Categories
-
-Histogram – Rating Distribution
-
-Pie Chart – Free vs Paid Apps
-
-Scatter Plot – Price vs Rating (Paid Apps)
-
-Bar Chart – Sentiment Distribution in Reviews
-
-**🛠️ Tools & Technologies**
-Python – Data manipulation and analysis
-
-Pandas, NumPy – Data handling and transformation
-
-Plotly – Interactive data visualizations
-
-Jupyter Notebook – Exploratory and visual workflows
-
+1. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
